@@ -14,6 +14,12 @@ $(".searchButton").on('click', function (e) {
 				object.artwork_url = "http://placekitten.com/100/100";
 			};
 
+			$(".container").append(`
+			<div class="searchResultsDiv">Search Results:
+      		</div>
+		    <div class="grid">
+		    </div>`);
+
 			$(".grid").append(`
 				<div class="trackContainer">
 					<div class="trackArtworkDiv">

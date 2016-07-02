@@ -1,0 +1,44 @@
+.container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.audioDiv {
+	border: 1px solid black;
+	border-width: 0 0 1px 0;
+	padding-bottom: 20px;
+	height: 60px;
+	width: 90%;
+}
+
+.audioTag {
+	margin-left: 35%;
+}
+
+.nowPlaying {
+	margin-left: 35%;
+}
+
+.searchForm {
+	margin-top: 20px;
+}
+
+.searchInput {
+	width: 310px;
+	padding-left: 10px;
+}
+
+.searchResultsDiv {
+	margin-top: 20px;
+	width: 90%;
+}
+
+.grid {
+	display: flex;
+	justify-content: space-around;
+}
+
+.trackContainer {
+	width: 19%;
+}

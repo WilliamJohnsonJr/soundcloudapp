@@ -5,19 +5,21 @@
 }
 
 .audioDiv {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 	border: 1px solid black;
 	border-width: 0 0 1px 0;
 	padding-bottom: 20px;
-	height: 60px;
-	width: 90%;
-}
-
-.audioTag {
-	margin-left: 35%;
+	height: 70px;
+	width: 550px;
 }
 
 .nowPlaying {
-	margin-left: 35%;
+	padding-top: 20px;
+	width: 550px;
+	height: 20px;
+	overflow: hidden;
 }
 
 .searchForm {
@@ -31,14 +33,29 @@
 
 .searchResultsDiv {
 	margin-top: 20px;
-	width: 90%;
+	margin-bottom: 10px;
+	padding-top: 10px;
+	width: 550px;
+	border: 1px solid gray;
+	border-width: 1px 0 0 0;
 }
 
 .grid {
+	width: 550px;
 	display: flex;
-	justify-content: space-around;
+	flex-wrap: wrap;
 }
 
 .trackContainer {
-	width: 19%;
+	width: 100px;
+	height: 180px;
+	margin-right: 10px;
+}
+
+.songTitle {
+    text-align: center;
+    color: darkblue;
+    font-size: 12px;
+    height: 60px;
+    overflow: hidden;
 }

@@ -7,18 +7,16 @@ $(".searchButton").on('click', function (e) {
 	e.preventDefault();
 	var input = $(".searchInput").val();
 	var musicData = musicSearch(input);
-	console.log(musicData);
 	musicData.then(function(musicData){
-		musicData.forEach(function(object){
-			if (object.artwork_url === null) {
-				object.artwork_url = "http://placekitten.com/100/100";
-			};
-
-			$(".container").append(`
+		$(".container").append(`
 			<div class="searchResultsDiv">Search Results:
       		</div>
 		    <div class="grid">
 		    </div>`);
+		musicData.forEach(function(object){
+			if (object.artwork_url === null) {
+				object.artwork_url = "http://placehold.it/100x100?text=No+Image+Found";
+			};
 
 			$(".grid").append(`
 				<div class="trackContainer">
@@ -26,9 +24,7 @@ $(".searchButton").on('click', function (e) {
 						<a id=${object.id} href="#" class="imgLink"><img class="artwork" src="${object.artwork_url}"></a>
 					</div>
 					<div class="songTitle">${object.title}
-					</div>
-					<div class="bandName">${object.user.username}
-				</div>`);
+					</div>`);
 		});
 		$(".imgLink").on('click', function(e){
 			e.preventDefault();
@@ -48,5 +44,3 @@ $(".searchButton").on('click', function (e) {
 		});
 	});
 });
-
-			

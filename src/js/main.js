@@ -7,7 +7,6 @@ $(".searchButton").on('click', function (e) {
 	e.preventDefault();
 	var input = $(".searchInput").val();
 	var musicData = musicSearch(input);
-	console.log(musicData);
 	$(".grid").html("");
 	musicData.then(function(musicData){
 		musicData.forEach(function(object){

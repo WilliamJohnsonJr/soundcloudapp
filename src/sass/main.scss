@@ -5,21 +5,22 @@
 }
 
 .audioDiv {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	border: 1px solid black;
-	border-width: 0 0 1px 0;
-	padding-bottom: 20px;
-	height: 70px;
-	width: 550px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid black;
+    border-width: 0 0 1px 0;
+    padding-bottom: 20px;
+    height: 136px;
+    width: 550px;
+    margin-top: 20px;
 }
 
 .nowPlaying {
-	padding-top: 20px;
 	width: 550px;
 	height: 20px;
 	overflow: hidden;
+	display: inline-block;
 }
 
 .searchForm {
@@ -48,7 +49,7 @@
 
 .trackContainer {
 	width: 100px;
-	height: 180px;
+	height: 200px;
 	margin-right: 10px;
 }
 
@@ -56,6 +57,19 @@
     text-align: center;
     color: darkblue;
     font-size: 12px;
-    height: 60px;
+    height: 57px;
     overflow: hidden;
+}
+
+.poweredByDiv {
+	height: 60px;
+}
+
+.userName {
+	text-align: center;
+}
+
+.userNameLink {
+	text-decoration: none;
+	font-size: 10px;
 }
